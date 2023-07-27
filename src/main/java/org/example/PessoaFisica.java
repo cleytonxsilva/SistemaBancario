@@ -5,10 +5,18 @@ public class PessoaFisica {
     private String nome;
     private String cpf;
 
+    private float saldoInicial;
+
+    //function resgate
+    //function depósito
+    //function saldo investimentos
+
+
     //constructor
-    public PessoaFisica(String nome, String cpf) {
+    public PessoaFisica(String nome, String cpf, float saldoInicial) {
         this.nome = nome;
         this.cpf = cpf;
+        this.saldoInicial = saldoInicial;
     }
 
     public PessoaFisica() {
@@ -32,5 +40,15 @@ public class PessoaFisica {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public  float getSaldoInicial(){
+        return saldoInicial;
+    }
+    public  void setSaldoInicial(float saldoInicial){
+        this.saldoInicial = saldoInicial;
+    }
+
+
+    //functions
 
 }
